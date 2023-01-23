@@ -30,7 +30,7 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 -----
 Happy coding!
 
-This is my third project. I have decided to keep it simple, ans to create a table with data. 
+This is my third project. I have decided to keep it simple. 
 In this project I am going to compare the input data to the average data already in the google spreadsheet.
 
 I have creating the credentials, then I have added the code that allows the project to connect to the google spreadsheet. This code I took it from the Love_Sandwiches project.
