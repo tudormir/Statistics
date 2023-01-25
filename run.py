@@ -20,7 +20,14 @@ values = SHEET.worksheet('data')
 
 data_1 = values.get_all_values()
 
-pprint(data_1)
+#pprint(data_1)
+
+def get_data_user():
+"""
+The user answers three questions. The data is then saved into a string array 
+and then written into the spreadsheet.
+"""
+
 
 print("This servey contains three questions. \n")
 
@@ -46,4 +53,22 @@ values = SHEET.worksheet('data')
 
 data_2 = values.get_all_values()
 
-pprint(data_2)
+#pprint(data_2)
+
+data_c=values.col_values(0)
+print(data_c)
+print(len(data_c))
+return data_str
+
+
+def get_values_from_sheet():
+    values = SHEET.worksheet('data')
+   # data_c=[]
+    data_c=values.col_values(0)
+    print(len(data_c))
+   # pprint(data_c)
+return data_c
+get_data_user()
+data_s=get_values_from_sheet()
+#pprint(data_s)
+
